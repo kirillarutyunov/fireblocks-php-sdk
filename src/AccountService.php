@@ -71,6 +71,6 @@ class AccountService extends Service
             return null;
         }
 
-        return new VaultAccount($response['id'], $response['name'], $response['hiddenOnUI']);
+        return new VaultAccount($response['id'], $response['name'], $response['hiddenOnUI'], $response['autoFuel'], $response['assets']);
     }
 }
